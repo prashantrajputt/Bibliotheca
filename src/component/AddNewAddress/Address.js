@@ -20,7 +20,7 @@ const Address=()=>{
         //alert(address.newAdd)
         e.preventDefault();
         try {
-        const url = `https://bibliotheca-backend.onrender.com/api/change-address/${email}`;
+        const url = `https://bibliotheca-backend-wund.onrender.com/api/change-address/${email}`;
         const { data: res } = await axios.put(url, address);
 
         console.log(res.message);
