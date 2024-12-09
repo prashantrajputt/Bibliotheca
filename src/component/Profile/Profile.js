@@ -12,7 +12,7 @@ const Profile= () => {
 	const email = localStorage.getItem("email");
 	const getUserDetail=async()=>{
 	  try{
-		  const {data}=await axios.get(`https://bibliotheca-backend.onrender.com/api/details/${email}`);
+		  const {data}=await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/details/${email}`);
 			  setUser(data);
   
 	  }catch(error){
