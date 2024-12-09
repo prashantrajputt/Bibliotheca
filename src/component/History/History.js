@@ -17,7 +17,7 @@ const History = () => {
 
     const getUserDetail = async () => {
         try {
-            const { data } = await axios.get(`https://bibliotheca-backend.onrender.com/api/details/${email}`);
+            const { data } = await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/details/${email}`);
             setUser(data);
         } catch (error) {
             console.log(error);
@@ -27,7 +27,7 @@ const History = () => {
     const getProducts = async () => {
         setLoading(true);
         try {
-            const { data } = await axios.get(`https://bibliotheca-backend.onrender.com/api/all/`);
+            const { data } = await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/all/`);
             setProducts(data);
         } catch (error) {
             console.log(error);
