@@ -44,7 +44,7 @@ const EditInfo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = `https://bibliotheca-backend.onrender.com/api/personal-details/${user.email}`;
+      const url = `https://bibliotheca-backend-wund.onrender.com/api/personal-details/${user.email}`;
       const { data: res } = await axios.put(url, data);
 
       console.log(res.message);
