@@ -29,7 +29,7 @@ const Delivery = () => {
 
     const handleRemove = async (id) => {
         try {
-            await axios.put(`https://bibliotheca-backend.onrender.com/api/remove-product/${email}/${id}`);
+            await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/remove-product/${email}/${id}`);
         } catch (error) {
             console.log(error);
         }
@@ -67,7 +67,7 @@ const onPayment = async (Price, id) => {
         Price: Price, // Price in paise
       };
   
-      const res = await axios.post('https://bibliotheca-backend.onrender.com/api/createOrder', options);
+      const res = await axios.post('https://bibliotheca-backend-wund.onrender.com/api/createOrder', options);
       const data = res.data;
   
       if (!data || !data.id) {
@@ -92,12 +92,12 @@ const onPayment = async (Price, id) => {
             signature: response.razorpay_signature,
           };
   
-          axios.post('https://bibliotheca-backend.onrender.com/api/verifyPayment', options2)
+          axios.post('https://bibliotheca-backend-wund.onrender.com/api/verifyPayment', options2)
             .then((res) => {
               console.log(res.data);
               if (res?.data?.success) {
                 alert("Payment Success...");
-                axios.put(`https://bibliotheca-backend.onrender.com/api/buy-product/${email}/${id}/${pq}`)
+                axios.put(`https://bibliotheca-backend-wund.onrender.com/api/buy-product/${email}/${id}/${pq}`)
                 .then(() => {
                  handleRemove(id);
                 navigate("/confirmed");
@@ -139,7 +139,7 @@ const onPayment = async (Price, id) => {
     }
     else if (codRef.current && codRef.current.checked) {
         try {
-            await axios.put(`https://bibliotheca-backend.onrender.com/api/buy-product/${email}/${id}/${pq}`);
+            await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/buy-product/${email}/${id}/${pq}`);
         } catch (error) {
             console.log(error);
         }
