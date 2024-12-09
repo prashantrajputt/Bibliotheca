@@ -35,7 +35,7 @@ const Detail = () => {
       setLoading(true);
       try {
         //toast("Welcome...")
-        const { data } = await axios.get(`https://bibliotheca-backend.onrender.com/api/all/`);
+        const { data } = await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/all/`);
         setProduct(data);
         
       } catch (error) {
@@ -57,13 +57,13 @@ const Detail = () => {
       if(quantities[id]===0)
       {
         toast("Product added to basket....")
-        await axios.put(`https://bibliotheca-backend.onrender.com/api/add-product/${email}/${id}`)
+        await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/add-product/${email}/${id}`)
       }
       else{
         //alert(quantities[id])
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/update-quantity/${email}/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/update-quantity/${email}/${id}`);
       }
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/increase-amount/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/increase-amount/${id}`);
     } catch (error) {
       console.log(error);
     }
@@ -82,8 +82,8 @@ const Detail = () => {
     
 
     try {
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/dec-quantity/${email}/${id}`);
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/decrease-amount/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/dec-quantity/${email}/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/decrease-amount/${id}`);
     } catch (error) {
       console.log(error);
     }
