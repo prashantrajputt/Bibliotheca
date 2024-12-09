@@ -38,7 +38,7 @@ const MainPage = () => {
       setLoading(true);
       try {
         //toast("Welcome...")
-        const { data } = await axios.get(`https://bibliotheca-backend.onrender.com/api/all/`);
+        const { data } = await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/all/`);
         setProduct(data);
         
       } catch (error) {
@@ -50,7 +50,7 @@ const MainPage = () => {
     const getDetail = async () => {
       setLoading(true);
       try {
-        const {data}=await axios.get(`https://bibliotheca-backend.onrender.com/api/details/${email}`);
+        const {data}=await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/details/${email}`);
 			  setUser(data);
         
       } catch (error) {
@@ -73,8 +73,8 @@ localStorage.setItem('ph',user.mob)
     }));
     try {
       toast("Product added to basket....")
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/add-product/${email}/${id}`)
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/increase-amount/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/add-product/${email}/${id}`)
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/increase-amount/${id}`);
     } catch (error) {
       console.log(error);
     }
@@ -87,8 +87,8 @@ localStorage.setItem('ph',user.mob)
       [id]: Math.min((prevQuantities[id] || 0) + 1)
     }));
     try {
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/update-quantity/${email}/${id}`);
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/increase-amount/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/update-quantity/${email}/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/increase-amount/${id}`);
     } catch (error) {
       console.log(error);
     }
@@ -107,8 +107,8 @@ localStorage.setItem('ph',user.mob)
     
 
     try {
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/dec-quantity/${email}/${id}`);
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/decrease-amount/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/dec-quantity/${email}/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/decrease-amount/${id}`);
     } catch (error) {
       console.log(error);
     }
