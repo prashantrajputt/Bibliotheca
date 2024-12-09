@@ -24,7 +24,7 @@ const Seller = () => {
 
     const fetchUsers = async () => {
         try {
-            const response = await axios.get('https://bibliotheca-backend.onrender.com/api/all/');
+            const response = await axios.get('https://bibliotheca-backend-wund.onrender.com/api/all/');
             setProducts(response.data);
         } catch (err) {
             setError(err.message);
@@ -44,7 +44,7 @@ const Seller = () => {
         try {
             console.log(data);
 
-            const url = 'https://bibliotheca-backend.onrender.com/api/add-products/';
+            const url = 'https://bibliotheca-backend-wund.onrender.com/api/add-products/';
             const { data: res } = await axios.post(url, data);
 
             console.log(res.message);
