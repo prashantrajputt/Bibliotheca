@@ -18,7 +18,7 @@ const Signup = () => {
         try {
             console.log(data);
 
-            const url = 'https://bibliotheca-backend.onrender.com/api/';
+            const url = 'https://bibliotheca-backend-wund.onrender.com/api/';
             const { data: res } = await axios.post(url, data);
 
             console.log(res.message);
