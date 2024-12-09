@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #36486b;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.containerO {
+  background-color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.main-contentO {
+  grid-column: 1;
+}
+
+.stepO {
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.choose-addressO {
+  display: flex;
+  justify-content: center;
+}
+
+.address-btnO,
+.add-address-btnO,
+.pay-btnO {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.address-btnO:hover,
+.add-address-btnO:hover,
+.pay-btnO:hover {
+  background-color: #bbb;
+}
+
+.payment-optionO {
+  margin-bottom: 10px;
+}
+
+.payment-optionO input {
+  margin-right: 10px;
+}
+
+.price-detailsO {
+  grid-column: 2;
+  border: 1px solid #e0e0e0;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.price-detailsO h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+.price-itemO {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price-itemO.totalO {
+  font-weight: bold;
+}
+
+.price-detailsO .pay-btnO {
+  background-color: #172ed7;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.price-detailsO .pay-btnO:hover {
+  background-color: #15084f;
+}
+
+.order-detailsO {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-sectionO {
+  margin-right: 20px;
+}
+
+.thumbnailO {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.details-sectionO {
+  flex-grow: 1;
+}
+
+.product-nameO {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.priceO {
+  display: flex;
+  align-items: baseline;
+}
+
+.original-priceO {
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: #888;
+}
+
+.discount-priceO {
+  font-size: 20px;
+  color: #E91E63;
+  margin-right: 10px;
+}
+
+.discountO {
+  color: #4CAF50;
+}
+
+.quantity-sectionO {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantityO {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.quantityO button {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.quantityO span {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.quantityO button:hover {
+  background-color: #bbb;
+}
+
+.coupon-sectionO {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coupon-sectionO input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.coupon-sectionO button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #172ed7;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.coupon-sectionO button:hover {
+  background-color: #15084f;
+}
+
+@media screen and (max-width: 768px) {
+  .containerO {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+
+  .main-contentO {
+    width: 70%;
+    margin-right: 50px;
+  }
+
+  .stepO {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .price-detailsO {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .address-btnO,
+  .add-address-btnO,
+  .pay-btnO {
+    width: 70%;
+  }
+
+  .price-detailsO .pay-btnO {
+    width: 70%;
+  }
+
+  .order-detailsO {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-sectionO {
+    margin-right: 0;
+  }
+
+  .details-sectionO {
+    margin-top: 20px;
+    width: 70%;
+  }
+  #choose-addressO button {
+    margin-left: 30px;
+  }
+}

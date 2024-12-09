@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-color: #36486b;
+}
+
+.sidebar1 {
+  width: 250px;
+  background-color: #36486b;
+  padding: 20px;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar1 {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.menu1 button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.menu1 button:hover {
+  background-color: #d0d0d0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+}
+
+#pForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#pForm label {
+  margin-bottom: 5px;
+}
+
+#pForm input[type="text"],
+#pForm input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pForm input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 0 0;
+}
+
+#pForm button[type="submit"] {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 15rem;
+  height: 2.5rem;
+}
+
+#pForm button[type="submit"]:hover {
+  background-color: #45a049;
+}
+@media screen and (max-width : 820px) {
+  #pForm button[type="submit"]{
+    width: 5rem;
+    height: 3rem;
+  }
+  .container1{
+  }
+  .sidebar1{
+    height: 10rem;
+  } 
+  .main-content{
+    width:fit-content;
+  }
+  .menu1 button{
+    height: 1.75rem;
+    margin:10px 10px;
+    width: 6rem;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+  #Sbtn{
+    margin-right:8px;
+  }
+  .menu1{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .container1{
+    justify-content: center;
+  }
+  .avatar1{
+    display: none;
+  }
+}

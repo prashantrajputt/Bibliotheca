@@ -1,0 +1,106 @@
+.loading {
+    width: 12rem;
+    height: 12rem;
+    margin-left:43%;
+    margin-top: 6%;
+  }
+  
+  .loading svg {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  #oConf h4{
+    color:cornflowerblue;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+
+  }
+  #oConf h3{
+    color:palegreen;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+  #oConf h2{
+    color:palegreen;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+  .circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-dasharray: 380;
+    stroke-dashoffset: 380;
+    animation: circle_4 2s ease-in-out forwards;
+  }
+  
+  .check {
+    stroke-dasharray: 45;
+    stroke-dashoffset: 45;
+    animation: check_4 0.2s 2s ease-in-out forwards;
+  }
+  
+  @keyframes circle_4 {
+    0% {
+      stroke-dashoffset: 380;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes check_4 {
+    0% {
+      stroke-dashoffset: 45;
+    }
+  
+    100% {
+      stroke-dashoffset: 90;
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .loading {
+        width: 10rem;
+        height: 10rem;
+        margin-left:33%;
+        margin-top: 10%;
+      }   
+}
+@media screen and (max-width: 520px)
+{
+    #oConf h4{
+        color:cornflowerblue;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+    
+      }
+      #oConf h3{
+        color:palegreen;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        
+      }
+      #oConf h2{
+        color:palegreen;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        
+      }
+      .loading {
+        width: 10rem;
+        height: 10rem;
+        margin-left:30%;
+        margin-top: 10%;
+      }  
+}

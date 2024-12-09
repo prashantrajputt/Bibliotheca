@@ -1,0 +1,105 @@
+#APdiv h1{
+    text-align: center;
+    color: cornsilk;
+    
+}
+#APdiv{
+    display: grid;
+    justify-content: center;
+}
+#ACdiv{
+    border-radius:10px;
+    border-color: black;
+    width: 60rem;
+    height: 25rem;
+    color: beige;
+    background-color: rgb(226, 219, 232);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#ACdiv textarea{
+    border-radius:10px 10px 0px 0px ;
+    width:60rem;
+    height: 20rem;
+    font-size: 1.5rem;
+}
+#ACdiv button{
+    background-color:palevioletred;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3rem;
+    width: 15rem;
+}
+#ACdiv button:hover{
+    opacity: 0.8;
+}
+@media screen and ((max-width:360px)) {
+    #ACdiv{
+        width: 16rem;
+        height: 20rem;
+    }
+    #ACdiv textarea{
+        width:16rem;
+        height: 15rem;
+        font-size: 1rem;
+    }
+    #ACdiv button{
+        width: 8rem;
+        height: 2.5rem;
+    }
+}
+@media screen and ((min-width:360px) and (max-width:465px)) {
+    #ACdiv{
+        width: 20rem;
+        height: 20rem;
+    }
+    #ACdiv textarea{
+        width:20rem;
+        height: 15rem;
+        font-size: 1.15rem;
+    }
+    #ACdiv button{
+        width: 10rem;
+        height: 2.5rem;
+    }
+}
+@media screen and ((min-width:465px) and (max-width:580px)) {
+    #ACdiv{
+        width: 25rem;
+        height: 20rem;
+    }
+    #ACdiv textarea{
+        width:25rem;
+        height: 15rem;
+        font-size: 1.25rem;
+    }
+    #ACdiv button{
+        width: 12rem;
+        height: 2.5rem;
+    }
+}
+@media screen and ((min-width:580px) and (max-width:720px)) {
+    #ACdiv{
+        width: 30rem;
+        height: 20rem;
+    }
+    #ACdiv textarea{
+        width:30rem;
+        height: 15rem;
+        font-size: 1.25rem;
+    }
+}
+@media screen and ((min-width:720px) and (max-width:1000px)) {
+    #ACdiv{
+        width: 35rem;
+        height: 20rem;
+    }
+    #ACdiv textarea{
+        width:35rem;
+        height: 15rem;
+        font-size: 1.25rem;
+    }
+}

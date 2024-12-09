@@ -1,0 +1,198 @@
+#sName {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#spForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0 2rem;
+}
+
+#scForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    min-width: 280px;
+}
+
+#scForm label {
+    font-size: 1.5rem;
+    color: cornsilk;
+    margin-bottom: 0.5rem;
+}
+
+#scForm input,
+#scForm textarea {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+#sDesc {
+    margin-top: 2rem;
+}
+
+#scForm textarea {
+    height: 5rem;
+    font-size: large;
+}
+
+#sBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#sBtn button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 15rem;
+    height: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+    #sName {
+        font-size: 2.5rem;
+    }
+
+    #scForm {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #sName {
+        font-size: 2rem;
+    }
+
+    #scForm {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #scForm input,
+#scForm textarea {
+    width: 80%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+#scForm textarea{
+    height:5rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+    #scForm input,
+    #scForm textarea {
+        height: 1.5rem;
+        font-size: small;
+    }
+
+    #scForm textarea {
+        height: 4rem;
+    }
+
+    #sBtn button {
+        width: 12rem;
+        height: 2.5rem;
+    }
+    #scForm input,
+#scForm textarea {
+    width: 70%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+#scForm textarea{
+    height:5rem;
+}
+}
+
+@media screen and (max-width: 576px) {
+    #sName {
+        font-size: 1.5rem;
+    }
+
+    #scForm label {
+        font-size: 1rem;
+    }
+
+    #scForm input,
+    #scForm textarea {
+        font-size: small;
+    }
+
+    #sBtn button {
+        width: 10rem;
+        height: 2rem;
+    }
+    #scForm input,
+#scForm textarea {
+    width: 65%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+#scForm textarea{
+    height:5rem;
+}
+}
+
+@media screen and (max-width: 400px) {
+    #sName {
+        font-size: 1.2rem;
+    }
+
+    #scForm input,
+    #scForm textarea {
+        height: 1.2rem;
+    }
+
+    #scForm textarea {
+        height: 3rem;
+    }
+
+    #sBtn button {
+        width: 8rem;
+        height: 1.5rem;
+    }
+    #scForm input,
+#scForm textarea {
+    width: 60%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+#scForm textarea{
+    height:5rem;
+}
+}
