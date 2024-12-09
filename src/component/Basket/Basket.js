@@ -31,7 +31,7 @@ const Basket = () => {
 
   const getUserDetail = async () => {
     try {
-      const { data } = await axios.get(`https://bibliotheca-backend.onrender.com/api/details/${email}`);
+      const { data } = await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/details/${email}`);
       setUser(data);
     } catch (error) {
       console.log(error);
@@ -41,7 +41,7 @@ const Basket = () => {
   const getProducts = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get(`https://bibliotheca-backend.onrender.com/api/all/`);
+      const { data } = await axios.get(`https://bibliotheca-backend-wund.onrender.com/api/all/`);
       setProducts(data);
     } catch (error) {
       console.log(error);
@@ -56,8 +56,8 @@ const Basket = () => {
 
   const handleRemove = async (id, quantity) => {
     try {
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/remove-product/${email}/${id}`);
-      await axios.put(`https://bibliotheca-backend.onrender.com/api/add-remove-product/${id}/${quantity}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/remove-product/${email}/${id}`);
+      await axios.put(`https://bibliotheca-backend-wund.onrender.com/api/add-remove-product/${id}/${quantity}`);
       setUser(prevUser => ({
         ...prevUser,
         Basket: prevUser.Basket.filter(item => item !== id),
